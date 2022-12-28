@@ -1,0 +1,13 @@
+#! bin/bash
+yum update -y
+yum install -y httpd
+service httpd start
+systemctl enable httpd
+cd /var/www/html
+rm -r index.html
+wget https://raw.githubusercontent.com/conquista41/my-projects/main/Project-101-kittens-carousel-static-website-ec2/static-web/index.html
+wget https://raw.githubusercontent.com/conquista41/my-projects/main/Project-101-kittens-carousel-static-website-ec2/static-web/cat0.jpg
+wget https://github.com/conquista41/my-projects/blob/main/Project-101-kittens-carousel-static-website-ec2/static-web/cat1.jpg?raw=true
+wget https://raw.githubusercontent.com/conquista41/my-projects/main/Project-101-kittens-carousel-static-website-ec2/static-web/cat2.jpg
+wget https://raw.githubusercontent.com/conquista41/my-projects/main/Project-101-kittens-carousel-static-website-ec2/static-web/cat3.png
+wget https://raw.githubusercontent.com/conquista41/my-projects/main/Project-101-kittens-carousel-static-website-ec2/static-web/cat1.jpg
